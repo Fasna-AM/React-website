@@ -17,6 +17,7 @@ const Landing = () => {
   }, [])
 
   const myStyle1 = {
+    
     backgroundImage: `url(${bg1})`,
 
     /* Set a specific height */
@@ -27,7 +28,8 @@ const Landing = () => {
     // backgroundPosition: "center",
     backgroundRepeat: " no-repeat",
     backgroundSize: "cover",
-    opacity: "0.8"
+    opacity: "0.8",
+    
   };
   const myStyle2 = {
     backgroundImage: `url(${bg2})`,
@@ -45,7 +47,7 @@ const Landing = () => {
 
 
   return (
-    <div style={{ paddingTop: "105px" }}>
+    <div style={{ paddingTop: "105px",width:"100%"}}>
       <div id='top' className="parallax1" style={myStyle1}>
         <div className="d-flex flex-column  align-items-center " style={{ height: "100vh",paddingTop:"11%" }}>
           <div data-aos="fade-right"><h1 className='text-white fw-bolder mb-5 text-center' style={{ fontSize: "65px" }}>YOUR PERFECT <span className='text-warning'>EVENT PARTNER</span> </h1></div>
